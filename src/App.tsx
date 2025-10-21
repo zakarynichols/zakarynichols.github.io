@@ -45,10 +45,11 @@ export function App() {
               <p className="duration">Feb 2021 – Apr 2021</p>
               <p className="tech">Node.js backend, SQL (MySQL) with Knex, React, TypeScript</p>
               <ul className="achievements">
-                <li>Designed and implemented live auction interfaces that updated instantly as bids were placed, delivering a seamless experience for participants.</li>
-                <li>Built backend services in Node.js that managed auction state with SQL databases, supporting hundreds of simultaneous users.</li>
-                <li>Automated repetitive internal workflows to streamline auction setup and reduce manual errors.</li>
-                <li>Implemented client-side caching and state synchronization so users always saw accurate auction data, even under high-frequency bidding.</li>
+                <li>Delivered end-to-end feature implementations spanning database schema migrations, Node.js business logic, and frontend integration.</li>
+                <li>Designed and extended SQL migrations to evolve core auction data models while preserving backward compatibility and data integrity.</li>
+                <li>Developed and optimized Node.js service handlers for real-time auction events, ensuring consistent, low-latency communication between client and server.</li>
+                <li>Integrated new backend endpoints into the React frontend, streamlining user interactions and improving system reliability across the stack.</li>
+                <li>Collaborated with product and backend teams to debug system-level issues, analyze data flows, and maintain stability under high traffic conditions.</li>
               </ul>
             </div>
             
@@ -58,10 +59,12 @@ export function App() {
               <p className="duration location">Oct 2020 – Feb 2021 | Middlebury, IN</p>
               <p className="tech">Capacitor.js, React, TypeScript</p>
               <ul className="achievements">
-                <li>Developed mobile apps that allowed RV owners to monitor and control lighting, climate, power, and tank levels from their devices.</li>
-                <li>Implemented asynchronous state management to ensure commands to devices were queued and executed reliably.</li>
-                <li>Processed and displayed sensor data in real time, giving users instant feedback on system status.</li>
-                <li>Designed a modular app architecture that made it easy to add support for new devices and features.</li>
+                <li>Developed and maintained a TypeScript + React application that interfaced directly with embedded RV control hardware via Capacitor.js and Bluetooth Low Energy (BLE).</li>
+                <li>Worked with the firmware engineering team to debug communication between mobile and microcontroller layers, resolving issues related to endianness, signal framing, and protocol timing.</li>
+                <li>Designed and tested application logic for real-time control of physical RV systems, including lighting, HVAC, power distribution, and tank sensors.</li>
+                <li>Implemented fault-tolerant data synchronization between the mobile frontend and the multiplexed control network, ensuring consistency across asynchronous hardware states.</li>
+                <li>Contributed to system-level investigations spanning firmware, BLE communication, and frontend layers, improving overall reliability and responsiveness of the control system.</li>
+                <li>Documented integration workflows and assisted in establishing debugging procedures for future firmware–frontend collaboration.</li>
               </ul>
             </div>
           </div>
