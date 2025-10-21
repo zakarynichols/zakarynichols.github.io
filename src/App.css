@@ -1,3 +1,178 @@
 .app {
-    color: orange;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+.header {
+  margin-bottom: 3rem;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 1rem;
+}
+
+.nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #666;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #111;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.bio {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 600px;
+}
+
+.project, .post {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.project:last-child, .post:last-child {
+  border-bottom: none;
+}
+
+.project h3 a, .post h3 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.project h3 a:hover, .post h3 a:hover {
+  color: #0066cc;
+}
+
+.tech {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.contact p {
+  line-height: 1.8;
+}
+
+.contact a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.experience {
+  margin-bottom: 2rem;
+}
+
+.job {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.job:last-child {
+  border-bottom: none;
+}
+
+.position {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.duration {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.duration.location {
+  margin-bottom: 1rem;
+}
+
+.achievements {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.achievements li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.achievements li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #666;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 1rem;
+  }
+  
+  .nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
 }
