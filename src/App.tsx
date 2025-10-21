@@ -16,9 +16,9 @@ export function App() {
       <main className="main">
         <section id="about" className="section">
           <h1>Zakary Nichols</h1>
-          <p className="subtitle">Go Developer</p>
+          <p className="subtitle">Software Developer | Problem Solver</p>
           <p className="bio">
-            Building reliable systems and tools in Go. Focused on backend development. Advocate for simple, maintainable code.
+            I build systems and tools end-to-end: from idea and architecture, to development, testing, and deployment, to monitoring, optimization, and scaling in production. I focus on creating solutions that solve complex problems reliably, efficiently, and maintainably, ensuring real-world impact every step of the way.
           </p>
         </section>
 
@@ -26,38 +26,42 @@ export function App() {
           <h2>Experience</h2>
           <div className="experience">
             <div className="job">
-              <h3>MFB Technologies</h3>
-              <p className="position">Frontend Developer, Align Binders (Remote)</p>
+              <h3>MFB Technologies – Align Binders (Remote)</h3>
+              <p className="position">Frontend Developer</p>
               <p className="duration">Apr 2021 – Oct 2025</p>
+              <p className="tech">TypeScript, React, Node.js (internal tooling/dev tools), Pipeline scripts (DevOps)</p>
               <ul className="achievements">
-                <li>Built complex data structures and algorithms for document annotation, highlighting, and navigation systems</li>
-                <li>Implemented client-side conflict resolution mechanisms for multi-user document synchronization</li>
-                <li>Developed efficient state management patterns for handling large document datasets and real-time updates</li>
-                <li>Created reusable component libraries with TypeScript interfaces and performance optimizations</li>
+                <li>Built an interactive platform that allowed multiple users to annotate and navigate documents in real time, ensuring smooth collaboration on large files.</li>
+                <li>Developed systems that automatically resolved conflicts when multiple users edited the same document simultaneously, keeping data consistent.</li>
+                <li>Created a library of reusable, high-performance TypeScript components that sped up development across multiple projects.</li>
+                <li>Improved real-time state management to handle rapid updates, ensuring the interface remained responsive and accurate during heavy usage.</li>
+                <li>Built a comprehensive binder export feature that organized and exported entire binder structures with tabs and documents in the correct hierarchy, implementing complex logic to ensure data integrity and proper formatting.</li>
               </ul>
             </div>
             
             <div className="job">
-              <h3>Auctioneer Software</h3>
-              <p className="position">Frontend Developer (Remote)</p>
+              <h3>Auctioneer Software (Remote)</h3>
+              <p className="position">Frontend Developer</p>
               <p className="duration">Feb 2021 – Apr 2021</p>
+              <p className="tech">Node.js backend, SQL (MySQL) with Knex, React, TypeScript</p>
               <ul className="achievements">
-                <li>Developed real-time auction frontend with React/TypeScript and GraphQL subscriptions for live bid updates</li>
-                <li>Built Node.js backend services with SQL database integration for auction state management</li>
-                <li>Created internal tooling scripts with Node.js for build automation and development workflow optimization</li>
-                <li>Implemented client-side data caching and state synchronization for high-frequency auction updates</li>
+                <li>Designed and implemented live auction interfaces that updated instantly as bids were placed, delivering a seamless experience for participants.</li>
+                <li>Built backend services in Node.js that managed auction state with SQL databases, supporting hundreds of simultaneous users.</li>
+                <li>Automated repetitive internal workflows to streamline auction setup and reduce manual errors.</li>
+                <li>Implemented client-side caching and state synchronization so users always saw accurate auction data, even under high-frequency bidding.</li>
               </ul>
             </div>
             
             <div className="job">
-              <h3>Firefly Integrations</h3>
-              <p className="position">Frontend Developer, VegaTouch Team</p>
+              <h3>Firefly Integrations – VegaTouch Team</h3>
+              <p className="position">Frontend Developer</p>
               <p className="duration location">Oct 2020 – Feb 2021 | Middlebury, IN</p>
+              <p className="tech">Capacitor.js, React, TypeScript</p>
               <ul className="achievements">
-                <li>Built React/TypeScript mobile application for real-time control of embedded RV systems</li>
-                <li>Implemented asynchronous state management for device communication and command queuing</li>
-                <li>Developed data processing algorithms for sensor readings and system status monitoring</li>
-                <li>Created modular component architecture for scalable hardware interface abstraction</li>
+                <li>Developed mobile apps that allowed RV owners to monitor and control lighting, climate, power, and tank levels from their devices.</li>
+                <li>Implemented asynchronous state management to ensure commands to devices were queued and executed reliably.</li>
+                <li>Processed and displayed sensor data in real time, giving users instant feedback on system status.</li>
+                <li>Designed a modular app architecture that made it easy to add support for new devices and features.</li>
               </ul>
             </div>
           </div>
@@ -67,19 +71,19 @@ export function App() {
           <h2>Go Projects</h2>
           <div className="projects">
             <div className="project">
-              <h3><a href="#">[Go Project Name]</a></h3>
-              <p>Concurrent web service built with Go's standard library and goroutines.</p>
-              <p className="tech">Go, net/http, goroutines, channels</p>
+              <h3><a href="#">REST API Service</a></h3>
+              <p>High-performance JSON API with PostgreSQL, built with Go's standard library for maximum performance.</p>
+              <p className="tech">Go, net/http, sql.DB, PostgreSQL, JSON</p>
             </div>
             <div className="project">
-              <h3><a href="#">[CLI Tool]</a></h3>
-              <p>Command-line tool for system monitoring and performance analysis.</p>
-              <p className="tech">Go, cobra, prometheus client</p>
+              <h3><a href="#">Database CLI Tool</a></h3>
+              <p>Command-line interface for database migrations and data management with interactive prompts.</p>
+              <p className="tech">Go, cobra, promptui, database/sql</p>
             </div>
             <div className="project">
-              <h3><a href="#">[Microservice]</a></h3>
-              <p>RESTful API service with PostgreSQL integration and JWT authentication.</p>
-              <p className="tech">Go, gin, gorm, PostgreSQL, Docker</p>
+              <h3><a href="#">Data Processing Pipeline</a></h3>
+              <p>Concurrent data processing service with worker pools and batch database operations.</p>
+              <p className="tech">Go, goroutines, channels, worker pools, PostgreSQL</p>
             </div>
           </div>
         </section>
@@ -88,19 +92,19 @@ export function App() {
           <h2>Writing</h2>
           <div className="writing">
             <div className="post">
-              <h3><a href="#">Understanding Go's Concurrency Model</a></h3>
+              <h3><a href="#">Building REST APIs with Go's Standard Library</a></h3>
               <p className="date">2024-10-15</p>
-              <p>Deep dive into goroutines, channels, and select statements with practical examples.</p>
+              <p>How to create clean, fast APIs using only Go's built-in packages.</p>
             </div>
             <div className="post">
-              <h3><a href="#">Building Production-Ready Go Services</a></h3>
+              <h3><a href="#">Database Patterns in Go</a></h3>
               <p className="date">2024-09-28</p>
-              <p>Best practices for logging, monitoring, and error handling in Go applications.</p>
+              <p>Effective database connection management and query patterns with sql.DB.</p>
             </div>
             <div className="post">
-              <h3><a href="#">Go vs. Traditional Systems Languages</a></h3>
+              <h3><a href="#">CLI Development with Cobra</a></h3>
               <p className="date">2024-09-10</p>
-              <p>Comparing Go's approach to systems programming with C and Rust.</p>
+              <p>Building professional command-line tools with proper error handling and user experience.</p>
             </div>
           </div>
         </section>
