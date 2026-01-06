@@ -2,6 +2,7 @@ export function Origin() {
   return (
     <section className="section">
       <h2>Origin Story</h2>
+      <p className="read-time">2 minute read</p>
       <p>
         I've always been naturally curious. As a kid, I asked too many questions and was never satisfied with surface level answers. I just liked learning. Like any teen, I was into video games. I bought a cheap used PSP and saw online that someone was running Nintendo games on it. Of course I wanted to do the same thing.
       </p>

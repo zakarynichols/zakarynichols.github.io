@@ -53,6 +53,12 @@ h2 {
   padding-bottom: 0.5rem;
 }
 
+.read-time {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+}
+
 h3 {
   font-size: 1.3rem;
   font-weight: 600;
@@ -224,6 +230,10 @@ h3 {
 
 .dark .position {
   color: #e0e0e0;
+}
+
+.dark .read-time {
+  color: #aaa;
 }
 
 .dark .duration {
