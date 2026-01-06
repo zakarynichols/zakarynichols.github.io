@@ -6,6 +6,7 @@ export function Experience() {
         <div className="job">
           <h3>MFB Technologies – Align Binders (Remote)</h3>
           <p className="position">Frontend Developer</p>
+          <p><a href="https://align.lawyer/" target="_blank" rel="noopener noreferrer">align.lawyer</a></p>
           <p className="duration">Apr 2021 – Oct 2025</p>
           <p className="tech">TypeScript, React, Node.js (internal tooling/dev tools), Pipeline scripts (DevOps)</p>
           <ul className="achievements">
@@ -19,7 +20,8 @@ export function Experience() {
         
         <div className="job">
           <h3>Auctioneer Software (Remote)</h3>
-          <p className="position">Frontend Developer</p>
+          <p className="position">Full-Stack Developer</p>
+          <p><a href="https://www.auctioneersoftware.com/" target="_blank" rel="noopener noreferrer">auctioneersoftware.com</a></p>
           <p className="duration">Feb 2021 – Apr 2021</p>
           <p className="tech">Node.js backend, SQL (MySQL) with Knex, React, TypeScript</p>
           <ul className="achievements">
@@ -33,7 +35,8 @@ export function Experience() {
         
         <div className="job">
           <h3>Firefly Integrations – VegaTouch Team</h3>
-          <p className="position">Frontend Developer</p>
+          <p className="position">Mobile Developer</p>
+          <p><a href="https://www.fireflyint.com/" target="_blank" rel="noopener noreferrer">fireflyint.com</a></p>
           <p className="duration location">Oct 2020 – Feb 2021 | Middlebury, IN</p>
           <p className="tech">Capacitor.js, React, TypeScript</p>
           <ul className="achievements">
