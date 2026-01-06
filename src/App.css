@@ -262,6 +262,47 @@ h3 {
   color: #fff;
 }
 
+/* Code block styles */
+code {
+  background-color: #f4f4f4;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+pre {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 1rem 0;
+  border: 1px solid #e0e0e0;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  color: #333;
+}
+
+.dark code {
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+}
+
+.dark pre {
+  background-color: #2d2d2d;
+  border-color: #444;
+}
+
+.dark pre code {
+  background-color: transparent;
+  color: #e0e0e0;
+}
+
 @media (max-width: 768px) {
   .app {
     padding: 1rem;
