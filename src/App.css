@@ -3,6 +3,8 @@
   margin: 0 auto;
   padding: 2rem;
   line-height: 1.6;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .header {
@@ -14,6 +16,7 @@
   gap: 2rem;
   border-bottom: 1px solid #e0e0e0;
   padding-bottom: 1rem;
+  align-items: center;
 }
 
 .nav a {
@@ -24,6 +27,10 @@
 
 .nav a:hover {
   color: #666;
+}
+
+.nav a.active {
+  font-weight: 600;
 }
 
 .section {
@@ -156,6 +163,93 @@ h3 {
   left: 0;
   color: #666;
   font-weight: bold;
+}
+
+/* Dark mode styles */
+:root.dark {
+  color-scheme: dark;
+}
+
+.dark .app {
+  color: #e0e0e0;
+}
+
+.dark .nav {
+  border-bottom-color: #333;
+}
+
+.dark .nav a {
+  color: #e0e0e0;
+}
+
+.dark .nav a:hover {
+  color: #fff;
+}
+
+.dark h1, .dark h2, .dark h3 {
+  color: #fff;
+}
+
+.dark h2 {
+  border-bottom-color: #333;
+}
+
+.dark .subtitle {
+  color: #aaa;
+}
+
+.dark .bio {
+  color: #e0e0e0;
+}
+
+.dark .project, .dark .post {
+  border-bottom-color: #333;
+}
+
+.dark .project h3 a, .dark .post h3 a {
+  color: #e0e0e0;
+}
+
+.dark .project h3 a:hover, .dark .post h3 a:hover {
+  color: #4dabf7;
+}
+
+.dark .tech, .dark .date {
+  color: #aaa;
+}
+
+.dark .job {
+  border-bottom-color: #333;
+}
+
+.dark .position {
+  color: #e0e0e0;
+}
+
+.dark .duration {
+  color: #aaa;
+}
+
+.dark .achievements li:before {
+  color: #aaa;
+}
+
+.dark .contact a {
+  color: #4dabf7;
+}
+
+.dark .contact a:hover {
+  color: #74c0fc;
+}
+
+.dark .dark-mode-toggle {
+  border-color: #666;
+  color: #e0e0e0;
+}
+
+.dark .dark-mode-toggle:hover {
+  border-color: #999;
+  color: #fff;
 }
 
 @media (max-width: 768px) {
