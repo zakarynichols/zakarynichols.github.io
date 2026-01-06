@@ -11,6 +11,20 @@ export function Landing() {
       <p>
         Sometimes it's a job. Sometimes it's just for fun. Either way, I'd be doing it.
       </p>
+      
+      <h2>What I'm Working On</h2>
+      <p>
+        I'm building <a href="https://fullbarbell.com" target="_blank" rel="noopener noreferrer">FULL Barbell</a>, a comprehensive workout tracking application that combines my passions for lifting and complex software. It's a full stack system with Go backend API using clean architecture patterns, React 19 frontend with TypeScript, PostgreSQL 15 database, and production deployment with Docker containerization. The infrastructure includes Nginx reverse proxy with SSL termination and rate limiting, Auth0 authentication, database migrations, and CI/CD deployment scripts.
+      </p>
+      <p>
+        It's been incredibly rewarding to maintain and handle this entire system from development to production. Being able to understand and manage every layer, from the database schema and API design to the deployment scripts and SSL certificates, gives me a real sense of pride and confidence in what I've built.
+      </p>
+      <p>
+        Separately, I'm working to become a better software developer by understanding systems from the ground up. I've been writing C programs and studying assembly to see what my high-level code compiles to, and learning Linux internals to understand how containers work instead of treating them as magic.
+      </p>
+      <p>
+        Both are driven by genuine curiosity, one about solving problems in a domain I love, the other about understanding how systems work fundamentally.
+      </p>
     </section>
   )
 }
