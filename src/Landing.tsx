@@ -56,10 +56,10 @@ export function Landing() {
       
       <h2>What I'm Working On</h2>
       <p>
-        I'm building <a href="https://fullbarbell.com" target="_blank" rel="noopener noreferrer">FULL Barbell</a>, a comprehensive workout tracking application that combines my passions for strength training and programming. It's a full stack system with Go backend API using clean architecture patterns, React 19 frontend with TypeScript, PostgreSQL 15 database, and production deployment with Docker containerization. The infrastructure includes Nginx reverse proxy with SSL termination and rate limiting, Auth0 authentication, database migrations, and CI/CD deployment scripts.
+        I'm building <a href="https://fullbarbell.com" target="_blank" rel="noopener noreferrer">FULL Barbell</a>, an unopinionated analytics platform designed specifically for intermediate and advanced lifters. Unlike typical fitness apps that tell you how to train, this is built on the understanding that experienced lifters already know their programs and methods. Instead, it serves as a comprehensive data analysis tool that reveals the patterns and insights that matter most for serious strength athletes.
       </p>
       <p>
-        It's been incredibly rewarding to maintain and handle this entire system from development to production. Being able to understand and manage every layer, from the database schema and API design to the deployment scripts and SSL certificates, gives me a real sense of pride and confidence in what I've built.
+        The application focuses on detailed analytics to prevent injury and ensure consistent linear progression. By tracking every lift, session, and recovery metric with surgical precision, it helps identify warning signs before they become injuries, validates that your training is actually working, and provides the data-driven confidence that experienced lifters need to make informed decisions about their programming.
       </p>
       
       <h2>Learning Distributed Systems</h2>
