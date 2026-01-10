@@ -1,35 +1,75 @@
+// import { DiGo, DiReact, DiPostgresql, DiDocker, DiNginx, DiLinux, DiGitBranch, DiNodejs } from "react-icons/di";
+// import { SiTypescript, SiGnubash } from "react-icons/si";
+
 export function Landing() {
   return (
     <section className="section">
-      <h1>I like software.</h1>
+      <h1>I like programming.</h1>
       <p>
-        I enjoy learning how systems work and building things with code.
-      </p>
-      <p>
-        I've been doing it for a long time, often just because I'm curious.
-      </p>
-      <p>
-        Sometimes it's a job. Sometimes it's just for fun. Either way, I'd be doing it.
-      </p>
+        I've been doing it for a long time, often just because I'm curious. Sometimes it's a job. Sometimes it's just for fun. Either way, I'd be doing it.
+      </p>      
+      {/* <div className="tech-icons">
+        <h3>Technologies & Tools</h3>
+        <div className="icons-grid">
+          <div className="tech-icon" title="Go">
+            <DiGo size={48} />
+            <span>Go</span>
+          </div>
+          <div className="tech-icon" title="React">
+            <DiReact size={48} />
+            <span>React</span>
+          </div>
+          <div className="tech-icon" title="TypeScript">
+            <SiTypescript size={48} />
+            <span>TypeScript</span>
+          </div>
+          <div className="tech-icon" title="PostgreSQL">
+            <DiPostgresql size={48} />
+            <span>PostgreSQL</span>
+          </div>
+          <div className="tech-icon" title="Docker">
+            <DiDocker size={48} />
+            <span>Docker</span>
+          </div>
+          <div className="tech-icon" title="Nginx">
+            <DiNginx size={48} />
+            <span>Nginx</span>
+          </div>
+          <div className="tech-icon" title="Linux">
+            <DiLinux size={48} />
+            <span>Linux</span>
+          </div>
+          <div className="tech-icon" title="Git">
+            <DiGitBranch size={48} />
+            <span>Git</span>
+          </div>
+          <div className="tech-icon" title="Node.js">
+            <DiNodejs size={48} />
+            <span>Node.js</span>
+          </div>
+          <div className="tech-icon" title="Bash">
+            <SiGnubash size={48} />
+            <span>Bash</span>
+          </div>
+        </div>
+      </div> */}
       
       <h2>What I'm Working On</h2>
       <p>
-        I'm building <a href="https://fullbarbell.com" target="_blank" rel="noopener noreferrer">FULL Barbell</a>, a comprehensive workout tracking application that combines my passions for lifting and complex software. It's a full stack system with Go backend API using clean architecture patterns, React 19 frontend with TypeScript, PostgreSQL 15 database, and production deployment with Docker containerization. The infrastructure includes Nginx reverse proxy with SSL termination and rate limiting, Auth0 authentication, database migrations, and CI/CD deployment scripts.
+        I'm building <a href="https://fullbarbell.com" target="_blank" rel="noopener noreferrer">FULL Barbell</a>, a comprehensive workout tracking application that combines my passions for strength training and programming. It's a full stack system with Go backend API using clean architecture patterns, React 19 frontend with TypeScript, PostgreSQL 15 database, and production deployment with Docker containerization. The infrastructure includes Nginx reverse proxy with SSL termination and rate limiting, Auth0 authentication, database migrations, and CI/CD deployment scripts.
       </p>
       <p>
         It's been incredibly rewarding to maintain and handle this entire system from development to production. Being able to understand and manage every layer, from the database schema and API design to the deployment scripts and SSL certificates, gives me a real sense of pride and confidence in what I've built.
       </p>
       
-      <h2>How I'm Learning</h2>
+      <h2>Learning Distributed Systems</h2>
       <p>
-        I'm working to become a better software developer by understanding systems from the ground up. I've been writing C programs and using gdb to step through every single instruction and examine what's happening. I compile with <code>gcc -g -O0 program.c</code> then run <code>gdb ./a.out</code>, set a breakpoint with <code>break main</code>, start with <code>run</code>, and step through each instruction with <code>stepi</code> while examining everything manually. After each instruction I check the instruction pointer, stack pointer, base pointer, examine stack memory, and inspect local variables to verify exactly what changed.
+        Lately I've been drawn to distributed systems. When you build full stack applications on a single server, you reach the monolithic deployment phase. Your app works end to end, but it's limited by that server's resources: CPU, memory, disk, and network. As traffic grows, a single server becomes a bottleneck. The natural next step is horizontal scaling, running your app across multiple machines behind a load balancer to distribute requests. I've been spending more time with the Go ecosystem and infrastructure tools like Docker and Kubernetes. There's real satisfaction in figuring out service communication, failure handling, and scaling beyond what one computer can manage.
       </p>
       <p>
-        I'm also diving deep into Linux internals to understand containerization at the system level. I'm learning about namespaces, cgroups, chroot, and how the kernel actually isolates processes. It's fascinating to see how Docker isn't really doing anything mysterious; it's just cleverly using Linux features that have been around for years. Understanding how PID namespaces give processes their own view of process IDs, how network namespaces create isolated network stacks, and how cgroups limit resource usage makes the whole container ecosystem click into place. It's satisfying when abstract concepts finally connect to concrete implementation details.
+        I'm approaching this as a long-term learning goal rather than something to master overnight. The complexity of distributed systems is real, and I'm enjoying the process of understanding concepts like consistency, fault tolerance, and coordination. My background building deployed applications gives me a solid foundation to build on, but I'm interested in diving deeper into the infrastructure side of things. It's less about chasing buzzwords and more about becoming the kind of programmer who can build reliable systems that actually work at scale.
       </p>
-      <p>
-        Both are driven by genuine curiosity, one about solving problems in a domain I love, the other about understanding how systems work fundamentally.
-      </p>
+
     </section>
   )
 }
