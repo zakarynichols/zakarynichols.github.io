@@ -56,7 +56,7 @@ export function Landing() {
       
       <h2>What I'm Working On</h2>
       <p>
-        I'm building <a href="https://fullbarbell.com" target="_blank" rel="noopener noreferrer">FULL Barbell</a>, an unopinionated analytics platform designed specifically for intermediate and advanced lifters. Unlike typical strength training apps that tell you how to train, this is built on the understanding that experienced lifters already know their programs and methods. Instead, it serves as a comprehensive data analysis tool that reveals the patterns and insights that matter most for serious strength athletes.
+        I'm building <a href="https://fullbarbell.com" target="_blank" rel="noopener noreferrer">FULL Barbell</a>, an unopinionated analytics platform designed specifically for intermediate and advanced strength athletes. Unlike typical strength training apps that tell you how to train, this is built on the understanding that experienced lifters already know their programs and methods. Instead, it serves as a comprehensive data analysis tool that reveals the patterns and insights that matter most for serious strength athletes.
       </p>
       <p>
         The application focuses on detailed analytics to prevent injury and ensure consistent linear progression. By tracking every lift, session, and recovery metric with surgical precision, it helps identify warning signs before they become injuries, validates that your training is actually working, and provides the data-driven confidence that experienced lifters need to make informed decisions about their programming.
