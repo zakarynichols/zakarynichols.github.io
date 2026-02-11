@@ -2,6 +2,7 @@ export function Experience() {
   return (
     <section className="section">
       <h2>Experience</h2>
+      <a href="/resume.pdf" download>Resume (PDF)</a>
       <div className="experience">
         <div className="job">
           <h3>MFB Technologies - Align Binders (Remote)</h3>
