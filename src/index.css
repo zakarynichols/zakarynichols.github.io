@@ -636,6 +636,12 @@ section {
   padding: 32px;
   position: relative;
   overflow: hidden;
+  transition: all var(--transition);
+}
+
+.project-card:hover {
+  border-color: var(--color-border-dark);
+  box-shadow: 0 4px 20px var(--color-shadow);
 }
 
 .project-header {
