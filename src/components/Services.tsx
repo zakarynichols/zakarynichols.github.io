@@ -1,0 +1,78 @@
+export default function Services() {
+  const services = [
+    {
+      title: 'Full-Stack SaaS Development',
+      description: 'Complete application development from requirements to deployment. I build secure, scalable web applications with proper architecture from day one.',
+      features: [
+        'Database schema design and optimization',
+        'RESTful API development',
+        'Frontend implementation with React and TypeScript',
+        'Authentication and authorization systems',
+        'Payment integration (Stripe)',
+        'Production deployment on Ubuntu/DigitalOcean',
+      ],
+    },
+    {
+      title: 'Real-Time Systems',
+      description: 'Specialized expertise in event-driven and collaborative systems that require robust concurrency handling and low-latency performance.',
+      features: [
+        'WebSocket infrastructure',
+        'Conflict resolution for concurrent edits',
+        'Event-driven architecture',
+        'Live auction and bidding systems',
+        'Collaborative document platforms',
+        'Hardware sync (BLE integration)',
+      ],
+    },
+    {
+      title: 'Backend Architecture',
+      description: 'Scalable backend systems designed for growth. I create robust architectures that handle complexity while maintaining performance.',
+      features: [
+        'PostgreSQL database design',
+        'Docker containerization',
+        'DevOps and CI/CD pipelines',
+        'Nginx configuration',
+        'Security hardening',
+        'Performance optimization',
+      ],
+    },
+    {
+      title: 'SaaS Hardening & Migration',
+      description: 'Transform MVP codebases into production-ready systems. I help startups scale from prototype to stable, maintainable applications.',
+      features: [
+        'Codebase audit and refactoring',
+        'Database migration strategies',
+        'Security review and compliance',
+        'Technical debt resolution',
+        'Architecture documentation',
+        'Team knowledge transfer',
+      ],
+    },
+  ]
+
+  return (
+    <section id="services" className="services">
+      <div className="services-container">
+        <div className="section-header">
+          <h2 className="section-title">Services</h2>
+          <p className="section-subtitle">
+            Specialized engineering for complex, production-grade applications
+          </p>
+        </div>
+        <div className="services-grid">
+          {services.map((service, index) => (
+            <div key={index} className="service-card">
+              <h3 className="service-title">{service.title}</h3>
+              <p className="service-description">{service.description}</p>
+              <ul className="service-features">
+                {service.features.map((feature, featureIndex) => (
+                  <li key={featureIndex}>{feature}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
