@@ -1,17 +1,17 @@
-import { SiReact, SiNodedotjs, SiPostgresql, SiDocker, SiDigitalocean, SiNginx, SiStripe, SiAuth0, SiTypescript, SiUbuntu, SiGo } from 'react-icons/si'
+import { SiReact, SiGo, SiNodedotjs, SiPostgresql, SiDocker, SiDigitalocean, SiNginx, SiStripe, SiAuth0, SiTypescript, SiUbuntu } from 'react-icons/si'
 
 const technologies = [
-  { icon: SiReact, label: 'React', color: '#61DAFB' },
-  { icon: SiTypescript, label: 'TypeScript', color: '#3178C6' },
+  { icon: SiGo, label: 'Go', color: '#00ADD8' },
   { icon: SiNodedotjs, label: 'Node.js', color: '#339933' },
   { icon: SiPostgresql, label: 'PostgreSQL', color: '#4169E1' },
+  { icon: SiReact, label: 'React', color: '#61DAFB' },
+  { icon: SiTypescript, label: 'TypeScript', color: '#3178C6' },
   { icon: SiDocker, label: 'Docker', color: '#2496ED' },
   { icon: SiStripe, label: 'Stripe', color: '#635BFF' },
   { icon: SiAuth0, label: 'Auth0', color: '#EB5424' },
   { icon: SiDigitalocean, label: 'DigitalOcean', color: '#0080FF' },
   { icon: SiNginx, label: 'Nginx', color: '#009639' },
   { icon: SiUbuntu, label: 'Ubuntu', color: '#E95420' },
-  { icon: SiGo, label: 'Go', color: '#00ADD8' },
 ]
 
 export default function Hero() {

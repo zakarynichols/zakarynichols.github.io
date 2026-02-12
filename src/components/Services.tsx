@@ -48,6 +48,18 @@ export default function Services() {
         'Team knowledge transfer',
       ],
     },
+    {
+      title: 'Frontend Engineering',
+      description: 'Complex frontend architecture for scalable applications. I build maintainable systems with proper state management and performance patterns.',
+      features: [
+        'React & TypeScript applications',
+        'State management architecture',
+        'Performance optimization and code splitting',
+        'Accessibility (WCAG) compliance',
+        'Component libraries and design systems',
+        'Type-safe API integration',
+      ],
+    },
   ]
 
   return (
@@ -56,7 +68,7 @@ export default function Services() {
         <div className="section-header">
           <h2 className="section-title">Services</h2>
           <p className="section-subtitle">
-            Specialized engineering for complex, production-grade applications
+            End-to-end solutions built for scalability, security, and performance
           </p>
         </div>
         <div className="services-grid">

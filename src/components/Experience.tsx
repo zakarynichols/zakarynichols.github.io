@@ -2,48 +2,40 @@ export default function Experience() {
   const experiences = [
     {
       company: 'MFB Technologies',
-      location: 'Bronson, MI',
       role: 'Software Developer',
-      period: 'April 2021 to October 2025',
+      period: 'Apr 2021 – Oct 2025',
       website: 'align.lawyer',
       achievements: [
-        'Built a real-time collaborative document platform enabling multiple users to annotate, navigate, and review large legal binders simultaneously',
-        'Designed and implemented conflict resolution logic for concurrent edits, preventing data loss while maintaining user intent during simultaneous updates',
-        'Implemented a full binder export system capable of assembling deeply nested documents, tabs, and metadata into correct, printable hierarchies',
-        'Managed Azure DevOps sprint boards and sprint planning, rotating ownership each sprint for shared team responsibility',
-        'Monitored, reported, and resolved Snyk security vulnerabilities to maintain application security and compliance',
-        'Built internal tooling and scripts to support development workflows, end-to-end testing, debugging, and deployment automation',
+        'Architected real-time collaborative platform for enterprise legal teams handling 500+ page binders with concurrent edits',
+        'Built scalable binder export system for high-volume litigation workflows',
+        'Designed responsive, accessible UI components for enterprise legal workflows',
+        'Led cross-functional Azure DevOps sprints and established security compliance practices',
       ],
-      technologies: ['React', 'TypeScript', 'Real-time Collaboration', 'PostgreSQL', 'Azure DevOps', 'Security'],
+      technologies: ['React', 'TypeScript', 'Real-time Collaboration', 'PostgreSQL', 'Azure DevOps', 'Security', 'UI/UX'],
     },
     {
       company: 'Spectrum Net Designs',
-      location: 'Grand Rapids, MI',
       role: 'Full-Stack Developer',
-      period: 'February 2021 to April 2021',
+      period: 'Feb 2021 – Apr 2021',
       website: 'auctioneersoftware.com',
       achievements: [
-        'Delivered end-to-end features across the stack, from database migrations and backend services to frontend UI updates',
-        'Designed and evolved SQL schemas for live auction data, balancing new feature requirements with backward compatibility',
-        'Built Node.js service handlers to process real-time auction events, bids, and state changes with low latency and predictable behavior',
-        'Debugged production issues involving data consistency and event timing during high-traffic auctions',
-        'Collaborated with product and backend teams to trace data flows, diagnose system bottlenecks, and stabilize core auction functionality',
+        'Delivered end-to-end features for high-volume enterprise auction platform',
+        'Designed SQL schemas for live auction data under mission-critical production workflows',
+        'Built low-latency Node.js handlers for real-time auction events during peak traffic',
+        'Created responsive, accessible UI components for bidder-facing interfaces during peak auction events',
       ],
-      technologies: ['Node.js', 'SQL', 'Real-time Systems', 'Frontend UI', 'Database Design'],
+      technologies: ['React', 'Node.js', 'SQL', 'Real-time Systems', 'Frontend UI', 'Database Design', 'Accessibility'],
     },
     {
       company: 'Firefly Integrations',
-      location: 'Middlebury, IN',
       role: 'Web/Mobile Developer',
-      period: 'October 2020 to February 2021',
+      period: 'Oct 2020 – Feb 2021',
       website: 'fireflyint.com',
       achievements: [
-        'Developed a cross-platform mobile application using React and TypeScript that interfaced directly with embedded RV control hardware via Bluetooth Low Energy',
-        'Implemented real-time control and monitoring for RV systems including lighting, HVAC, power distribution, and tank sensors',
-        'Worked closely with firmware engineers to debug and resolve low-level communication issues involving endianness, signal framing, timing, and protocol design',
-        'Built fault-tolerant synchronization logic to keep the mobile UI consistent with asynchronous and partially connected hardware states',
-        'Investigated system-wide bugs spanning firmware, BLE transport, and frontend logic to improve responsiveness and reliability',
-        'Documented integration patterns and debugging workflows to streamline future collaboration between mobile and firmware teams',
+        'Developed cross-platform mobile app for enterprise RV hardware integration via Bluetooth Low Energy',
+        'Built real-time control/monitoring for mission-critical RV systems (HVAC, power, sensors)',
+        'Collaborated with firmware engineers on low-level communication protocols',
+        'Designed custom BLE profile for seamless hardware device communication',
       ],
       technologies: ['React', 'TypeScript', 'Bluetooth Low Energy', 'Mobile Development', 'Firmware Integration'],
     },
@@ -55,7 +47,7 @@ export default function Experience() {
         <div className="section-header">
           <h2 className="section-title">Experience</h2>
           <p className="section-subtitle">
-            Full-stack engineering specializing in backend architecture, database design, and production SaaS
+            A track record of delivering high-impact solutions across various industries and company stages
           </p>
         </div>
         <div className="experience-timeline">
@@ -68,7 +60,6 @@ export default function Experience() {
                 </div>
                 <div className="experience-meta">
                   <span className="experience-period">{exp.period}</span>
-                  <span className="experience-location">{exp.location}</span>
                 </div>
               </div>
               <a href={`https://${exp.website}`} target="_blank" rel="noopener noreferrer" className="experience-website">
@@ -92,13 +83,11 @@ export default function Experience() {
           <div className="project-card">
             <div className="project-header">
               <h4>FULL Barbell</h4>
-              <span className="project-status">Deployed on DigitalOcean Ubuntu 24</span>
             </div>
             <p className="project-description">
-              Architected and deployed a subscription-based SaaS analytics platform featuring
-              containerized infrastructure, Stripe billing integration, Auth0 authentication,
+              Architected and deployed a subscription-based SaaS analytics platform from concept to production,
+              featuring containerized infrastructure, Stripe billing, Auth0 authentication,
               PostgreSQL data modeling, automated migrations, health checks, and CI/CD pipelines.
-              This project demonstrates end-to-end SaaS lifecycle understanding.
             </p>
             <div className="project-technologies">
               <span className="technology-tag">Docker</span>
@@ -106,7 +95,6 @@ export default function Experience() {
               <span className="technology-tag">Stripe</span>
               <span className="technology-tag">Auth0</span>
               <span className="technology-tag">DigitalOcean</span>
-              <span className="technology-tag">Nginx</span>
               <span className="technology-tag">CI/CD</span>
             </div>
           </div>
