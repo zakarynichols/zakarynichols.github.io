@@ -39,7 +39,6 @@ export default function Header({ activeSection, darkMode, onToggleDarkMode }: He
       <div className="header-container">
         <div className="logo" onClick={() => scrollToSection('home')}>
           <span className="logo-name">Zakary Nichols</span>
-          <span className="logo-tagline">Full-Stack SaaS Engineer</span>
         </div>
 
         <nav className={`nav ${isMobileMenuOpen ? 'open' : ''}`}>
