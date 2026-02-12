@@ -1,45 +1,7 @@
-import { useState } from 'react'
+import { useForm, ValidationError } from '@formspree/react'
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    projectType: '',
-    budget: '',
-    timeline: '',
-    message: '',
-  })
-
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [submitted, setSubmitted] = useState(false)
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-
-    setIsSubmitting(false)
-    setSubmitted(true)
-    setFormData({
-      name: '',
-      email: '',
-      company: '',
-      projectType: '',
-      budget: '',
-      timeline: '',
-      message: '',
-    })
-
-    setTimeout(() => setSubmitted(false), 5000)
-  }
+  const [state, handleSubmit] = useForm("xlgwjdrw")
 
   const projectTypes = [
     'Full-Stack SaaS Development',
@@ -65,6 +27,58 @@ export default function Contact() {
     'Not urgent',
     'Flexibly',
   ]
+
+  if (state.succeeded) {
+    return (
+      <section id="contact" className="contact">
+        <div className="contact-container">
+          <div className="contact-info">
+            <h2 className="section-title">Let's Talk</h2>
+            <p className="contact-intro">
+              I'm always interested in hearing about interesting projects.
+              Whether you have a clear vision or just an idea,
+              let's discuss how I can help bring it to life.
+            </p>
+
+            <div className="contact-details">
+              <div className="contact-item">
+                <span className="contact-label">Email</span>
+                <a href="mailto:contact@zakarynichols.com" className="contact-value">
+                  contact@zakarynichols.com
+                </a>
+              </div>
+              <div className="contact-item">
+                <span className="contact-label">Location</span>
+                <span className="contact-value">Bronson, MI</span>
+              </div>
+              <div className="contact-item">
+                <span className="contact-label">Availability</span>
+                <span className="contact-value availability">Taking new projects</span>
+              </div>
+            </div>
+
+            <div className="ideal-projects">
+              <h3 className="ideal-projects-title">Ideal Projects</h3>
+              <ul className="ideal-projects-list">
+                <li>Early-stage SaaS applications</li>
+                <li>Real-time collaboration platforms</li>
+                <li>Data-heavy web applications</li>
+                <li>Backend architecture projects</li>
+                <li>System modernization and migration</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="contact-form-wrapper">
+            <div className="form-success">
+              <h3>Thank you for reaching out</h3>
+              <p>I'll get back to you within 24-48 hours to discuss your project.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    )
+  }
 
   return (
     <section id="contact" className="contact">
@@ -107,122 +121,103 @@ export default function Contact() {
         </div>
 
         <div className="contact-form-wrapper">
-          {submitted ? (
-            <div className="form-success">
-              <h3>Thank you for reaching out</h3>
-              <p>I'll get back to you within 24-48 hours to discuss your project.</p>
-            </div>
-          ) : (
-            <form className="contact-form" onSubmit={handleSubmit}>
-              <div className="form-row">
-                <div className="form-group">
-                  <label htmlFor="name">Name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    placeholder="Your name"
-                  />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="email">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    placeholder="your@email.com"
-                  />
-                </div>
-              </div>
-
-              <div className="form-row">
-                <div className="form-group">
-                  <label htmlFor="company">Company</label>
-                  <input
-                    type="text"
-                    id="company"
-                    name="company"
-                    value={formData.company}
-                    onChange={handleChange}
-                    placeholder="Company name"
-                  />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="projectType">Project Type</label>
-                  <select
-                    id="projectType"
-                    name="projectType"
-                    value={formData.projectType}
-                    onChange={handleChange}
-                    required
-                  >
-                    <option value="">Select project type</option>
-                    {projectTypes.map((type) => (
-                      <option key={type} value={type}>{type}</option>
-                    ))}
-                  </select>
-                </div>
-              </div>
-
-              <div className="form-row">
-                <div className="form-group">
-                  <label htmlFor="budget">Budget Range</label>
-                  <select
-                    id="budget"
-                    name="budget"
-                    value={formData.budget}
-                    onChange={handleChange}
-                  >
-                    <option value="">Select budget range</option>
-                    {budgetRanges.map((range) => (
-                      <option key={range} value={range}>{range}</option>
-                    ))}
-                  </select>
-                </div>
-                <div className="form-group">
-                  <label htmlFor="timeline">Timeline</label>
-                  <select
-                    id="timeline"
-                    name="timeline"
-                    value={formData.timeline}
-                    onChange={handleChange}
-                  >
-                    <option value="">Select timeline</option>
-                    {timelines.map((time) => (
-                      <option key={time} value={time}>{time}</option>
-                    ))}
-                  </select>
-                </div>
-              </div>
-
+          <form className="contact-form" onSubmit={handleSubmit}>
+            <div className="form-row">
               <div className="form-group">
-                <label htmlFor="message">Project Details</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
+                <label htmlFor="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
                   required
-                  placeholder="Tell me about your project, goals, and any specific requirements..."
-                  rows={5}
-                ></textarea>
+                  placeholder="Your name"
+                />
               </div>
+              <div className="form-group">
+                <label htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="your@email.com"
+                />
+                <ValidationError prefix="Email" field="email" errors={state.errors} />
+              </div>
+            </div>
 
-              <button
-                type="submit"
-                className="btn btn-primary btn-full"
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? 'Sending...' : 'Send Message'}
-              </button>
-            </form>
-          )}
+            <div className="form-row">
+              <div className="form-group">
+                <label htmlFor="company">Company</label>
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  placeholder="Company name"
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="projectType">Project Type</label>
+                <select
+                  id="projectType"
+                  name="projectType"
+                  required
+                >
+                  <option value="">Select project type</option>
+                  {projectTypes.map((type) => (
+                    <option key={type} value={type}>{type}</option>
+                  ))}
+                </select>
+              </div>
+            </div>
+
+            <div className="form-row">
+              <div className="form-group">
+                <label htmlFor="budget">Budget Range</label>
+                <select
+                  id="budget"
+                  name="budget"
+                >
+                  <option value="">Select budget range</option>
+                  {budgetRanges.map((range) => (
+                    <option key={range} value={range}>{range}</option>
+                  ))}
+                </select>
+              </div>
+              <div className="form-group">
+                <label htmlFor="timeline">Timeline</label>
+                <select
+                  id="timeline"
+                  name="timeline"
+                >
+                  <option value="">Select timeline</option>
+                  {timelines.map((time) => (
+                    <option key={time} value={time}>{time}</option>
+                  ))}
+                </select>
+              </div>
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="message">Project Details</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                placeholder="Tell me about your project, goals, and any specific requirements..."
+                rows={5}
+              />
+              <ValidationError prefix="Message" field="message" errors={state.errors} />
+            </div>
+
+            <button
+              type="submit"
+              className="btn btn-primary btn-full"
+              disabled={state.submitting}
+            >
+              {state.submitting ? 'Sending...' : 'Send Message'}
+            </button>
+          </form>
         </div>
       </div>
     </section>
