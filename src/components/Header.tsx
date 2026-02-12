@@ -2,9 +2,11 @@ import { useState, useEffect } from 'react'
 
 interface HeaderProps {
   activeSection: string
+  darkMode: boolean
+  onToggleDarkMode: () => void
 }
 
-export default function Header({ activeSection }: HeaderProps) {
+export default function Header({ activeSection, darkMode, onToggleDarkMode }: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -54,6 +56,14 @@ export default function Header({ activeSection }: HeaderProps) {
             ))}
           </ul>
         </nav>
+
+        <button
+          className="theme-toggle"
+          onClick={onToggleDarkMode}
+          aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+        >
+          {darkMode ? 'Light' : 'Dark'}
+        </button>
 
         <button
           className="mobile-menu-button"

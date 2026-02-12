@@ -9,6 +9,25 @@ import Footer from './components/Footer'
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
+  const [darkMode, setDarkMode] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('darkMode')
+      if (saved !== null) {
+        return JSON.parse(saved)
+      }
+      return window.matchMedia('(prefers-color-scheme: dark)').matches
+    }
+    return false
+  })
+
+  useEffect(() => {
+    localStorage.setItem('darkMode', JSON.stringify(darkMode))
+    if (darkMode) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  }, [darkMode])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,7 +53,11 @@ function App() {
 
   return (
     <div className="app">
-      <Header activeSection={activeSection} />
+      <Header
+        activeSection={activeSection}
+        darkMode={darkMode}
+        onToggleDarkMode={() => setDarkMode(!darkMode)}
+      />
       <main>
         <Hero />
         <Services />

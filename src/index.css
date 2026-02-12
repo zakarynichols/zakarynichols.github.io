@@ -28,6 +28,22 @@
   --max-width: 1200px;
 }
 
+html.dark {
+  --color-bg: #0f1419;
+  --color-bg-alt: #1a1d23;
+  --color-bg-dark: #0d1117;
+  --color-text: #e6edf3;
+  --color-text-light: #b1bac4;
+  --color-text-muted: #8b949e;
+  --color-text-inverse: #0d1117;
+  --color-primary: #58a6ff;
+  --color-primary-dark: #388bfd;
+  --color-primary-light: #1f2937;
+  --color-border: #30363d;
+  --color-border-dark: #484f58;
+  --color-shadow: rgba(0, 0, 0, 0.4);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -69,7 +85,7 @@ ul {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--color-bg);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--color-border);
   transition: all var(--transition);
@@ -148,6 +164,23 @@ ul {
   border: none;
   cursor: pointer;
   padding: 8px;
+}
+
+.theme-toggle {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.theme-toggle:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .hamburger {
@@ -326,27 +359,6 @@ section {
   display: flex;
   gap: 16px;
   margin-bottom: 48px;
-}
-
-.hero-stats {
-  display: flex;
-  gap: 48px;
-}
-
-.stat {
-  display: flex;
-  flex-direction: column;
-}
-
-.stat-number {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--color-text);
-}
-
-.stat-label {
-  font-size: 0.875rem;
-  color: var(--color-text-muted);
 }
 
 /* Tech Stack */
@@ -1071,6 +1083,10 @@ section {
     display: block;
   }
 
+  .theme-toggle {
+    display: none;
+  }
+
   .hero {
     padding-top: 120px;
   }
@@ -1086,11 +1102,6 @@ section {
 
   .hero-cta {
     flex-direction: column;
-  }
-
-  .hero-stats {
-    flex-wrap: wrap;
-    gap: 24px;
   }
 
   .tech-grid {
@@ -1152,11 +1163,6 @@ section {
 @media (max-width: 480px) {
   .hero-title {
     font-size: 1.875rem;
-  }
-
-  .hero-stats {
-    flex-direction: column;
-    gap: 16px;
   }
 
   .btn {
