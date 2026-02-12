@@ -6,10 +6,10 @@ export default function Experience() {
       period: 'Apr 2021 – Oct 2025',
       website: 'align.lawyer',
       achievements: [
-        'Architected real-time collaborative platform for enterprise legal teams handling 500+ page binders with concurrent edits',
-        'Built scalable binder export system for high-volume litigation workflows',
-        'Designed responsive, accessible UI components for enterprise legal workflows',
-        'Led cross-functional Azure DevOps sprints and established security compliance practices',
+        'Architected multi-tenant legal platform handling 500+ page binders with enterprise-grade security and access controls',
+        'Built scalable binder export system supporting high-volume litigation workflows',
+        'Designed compliant UI components meeting enterprise security and accessibility standards',
+        'Led Azure DevOps sprints and established CI/CD practices for team productivity',
       ],
       technologies: ['React', 'TypeScript', 'Real-time Collaboration', 'PostgreSQL', 'Azure DevOps', 'Security', 'UI/UX'],
     },
@@ -19,10 +19,10 @@ export default function Experience() {
       period: 'Feb 2021 – Apr 2021',
       website: 'auctioneersoftware.com',
       achievements: [
-        'Delivered end-to-end features for high-volume enterprise auction platform',
-        'Designed SQL schemas for live auction data under mission-critical production workflows',
-        'Built low-latency Node.js handlers for real-time auction events during peak traffic',
-        'Created responsive, accessible UI components for bidder-facing interfaces during peak auction events',
+        'Delivered end-to-end features for high-volume auction and e-commerce platform',
+        'Designed SQL schemas for transactional data under mission-critical production workflows',
+        'Built low-latency APIs for bidder-facing interfaces during peak traffic events',
+        'Created responsive, accessible UI components for customer-facing auction experiences',
       ],
       technologies: ['React', 'Node.js', 'SQL', 'Real-time Systems', 'Frontend UI', 'Database Design', 'Accessibility'],
     },
@@ -78,8 +78,13 @@ export default function Experience() {
             </div>
           ))}
         </div>
-        <div className="personal-project">
-          <h3 className="personal-project-title">Personal SaaS Project</h3>
+        <div className="featured-project">
+          <div className="section-header">
+            <h3 className="personal-project-title">Featured SaaS Project</h3>
+            <p className="section-subtitle">
+              A complete subscription platform demonstrating full-stack SaaS capabilities
+            </p>
+          </div>
           <div className="project-card">
             <div className="project-header">
               <h4>FULL Barbell</h4>

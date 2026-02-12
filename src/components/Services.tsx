@@ -13,18 +13,6 @@ export default function Services() {
       ],
     },
     {
-      title: 'Real-Time Systems',
-      description: 'Specialized expertise in event-driven and collaborative systems that require robust concurrency handling and low-latency performance.',
-      features: [
-        'WebSocket infrastructure',
-        'Conflict resolution for concurrent edits',
-        'Event-driven architecture',
-        'Live auction and bidding systems',
-        'Collaborative document platforms',
-        'Hardware sync (BLE integration)',
-      ],
-    },
-    {
       title: 'Backend Architecture',
       description: 'Scalable backend systems designed for growth. I create robust architectures that handle complexity while maintaining performance.',
       features: [
@@ -34,6 +22,18 @@ export default function Services() {
         'Nginx configuration',
         'Security hardening',
         'Performance optimization',
+      ],
+    },
+    {
+      title: 'Subscription & Billing Integration',
+      description: 'Revenue-focused integrations built for recurring business models. I implement secure, scalable billing systems that grow with your customer base.',
+      features: [
+        'Stripe subscription implementation',
+        'Usage-based pricing models',
+        'Proration and billing corrections',
+        'Revenue recognition tracking',
+        'Payment failure handling',
+        'Customer portal integration',
       ],
     },
     {

@@ -2,28 +2,28 @@ import { useForm, ValidationError } from '@formspree/react'
 
 const idealProjects = [
   'Early-stage SaaS applications',
-  'Real-time collaboration platforms',
   'Data-heavy web applications',
   'Backend architecture projects',
   'Frontend engineering projects',
+  'Real-time collaboration platforms',
   'System modernization and migration',
 ]
 
 const projectTypes = [
   'Full-Stack SaaS Development',
-  'Real-Time Systems',
   'Backend Architecture',
   'Frontend Engineering',
   'SaaS Hardening & Migration',
+  'Real-Time Systems',
   'Consulting & Architecture Review',
   'Other',
 ]
 
 const budgetRanges = [
-  'Under $5,000',
-  '$5,000 - $15,000',
-  '$15,000 - $50,000',
-  '$50,000+',
+  '$1,000 - $3,000',
+  '$3,000 - $7,500',
+  '$7,500 - $15,000',
+  '$15,000+',
   'Not sure yet',
 ]
 
