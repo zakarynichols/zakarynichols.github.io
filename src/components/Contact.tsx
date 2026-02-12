@@ -46,7 +46,6 @@ export default function Contact() {
     'Real-Time Systems',
     'Backend Architecture',
     'SaaS Hardening & Migration',
-    'Mobile Development',
     'Consulting & Architecture Review',
     'Other',
   ]
@@ -101,7 +100,6 @@ export default function Contact() {
               <li>Early-stage SaaS applications</li>
               <li>Real-time collaboration platforms</li>
               <li>Data-heavy web applications</li>
-              <li>Legal tech and fintech solutions</li>
               <li>Backend architecture projects</li>
               <li>System modernization and migration</li>
             </ul>

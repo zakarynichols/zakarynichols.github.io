@@ -55,7 +55,7 @@ export default function Experience() {
         <div className="section-header">
           <h2 className="section-title">Experience</h2>
           <p className="section-subtitle">
-            Building production systems across legal tech, auction platforms, and IoT
+            Full-stack engineering specializing in backend architecture, database design, and production SaaS
           </p>
         </div>
         <div className="experience-timeline">
