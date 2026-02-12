@@ -56,7 +56,6 @@ export default function Experience() {
               <div className="experience-header">
                 <div className="experience-title-group">
                   <h3 className="experience-company">{exp.company}</h3>
-                  <span className="experience-role">{exp.role}</span>
                 </div>
                 <div className="experience-meta">
                   <span className="experience-period">{exp.period}</span>
@@ -78,7 +77,7 @@ export default function Experience() {
             </div>
           ))}
         </div>
-        <div className="featured-project">
+        {/* <div className="featured-project">
           <div className="section-header">
             <h3 className="personal-project-title">Featured SaaS Project</h3>
             <p className="section-subtitle">
@@ -103,7 +102,7 @@ export default function Experience() {
               <span className="technology-tag">CI/CD</span>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )
