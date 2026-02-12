@@ -45,8 +45,6 @@ export default function Hero() {
                 View Work
               </button>
             </div>
-          </div>
-          <div className="hero-visual">
             <div className="tech-stack">
               <div className="tech-stack-header">Production Stack</div>
               <div className="tech-grid">
