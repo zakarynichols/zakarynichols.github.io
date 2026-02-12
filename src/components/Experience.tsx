@@ -77,32 +77,41 @@ export default function Experience() {
             </div>
           ))}
         </div>
-        {/* <div className="featured-project">
+        <div className="featured-project">
           <div className="section-header">
-            <h3 className="personal-project-title">Featured SaaS Project</h3>
-            <p className="section-subtitle">
-              A complete subscription platform demonstrating full-stack SaaS capabilities
-            </p>
+            <h3 className="personal-project-title">Featured Project</h3>
           </div>
-          <div className="project-card">
-            <div className="project-header">
-              <h4>FULL Barbell</h4>
+          <div className="experience-card">
+            <div className="experience-header">
+              <div className="experience-title-group">
+                <h3 className="experience-company">FULL Barbell</h3>
+              </div>
+              <div className="experience-meta">
+                <span className="experience-period">Closed Beta</span>
+              </div>
             </div>
-            <p className="project-description">
-              Architected and deployed a subscription-based SaaS analytics platform from concept to production,
-              featuring containerized infrastructure, Stripe billing, Auth0 authentication,
-              PostgreSQL data modeling, automated migrations, health checks, and CI/CD pipelines.
-            </p>
-            <div className="project-technologies">
+            <a href="https://fullbarbell.com" target="_blank" rel="noopener noreferrer" className="experience-website">
+              fullbarbell.com
+            </a>
+            <ul className="experience-achievements">
+              <li>Designed and deployed full-stack SaaS with Dockerized infrastructure on Ubuntu 24</li>
+              <li>Implemented Stripe subscription billing with customer portal and proration handling</li>
+              <li>Built secure authentication with Auth0 supporting multi-factor authentication</li>
+              <li>Architected PostgreSQL database with optimized indexes for high-volume data queries</li>
+            </ul>
+            <div className="experience-technologies">
               <span className="technology-tag">Docker</span>
               <span className="technology-tag">PostgreSQL</span>
               <span className="technology-tag">Stripe</span>
               <span className="technology-tag">Auth0</span>
-              <span className="technology-tag">DigitalOcean</span>
+              <span className="technology-tag">Ubuntu</span>
               <span className="technology-tag">CI/CD</span>
+              <span className="technology-tag">React</span>
+              <span className="technology-tag">TypeScript</span>
+              <span className="technology-tag">Node.js</span>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   )
