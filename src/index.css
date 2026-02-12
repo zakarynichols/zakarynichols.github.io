@@ -349,6 +349,7 @@ section {
   line-height: 1.75;
   margin-bottom: 32px;
   max-width: 520px;
+  text-align: left;
 }
 
 .hero-cta {
