@@ -94,8 +94,8 @@ export default function Contact() {
           <div className="contact-details">
             <div className="contact-item">
               <span className="contact-label">Email</span>
-              <a href="mailto:zakary@zakarynichols.com" className="contact-value">
-                zakary@zakarynichols.com
+              <a href="mailto:contact@zakarynichols.com" className="contact-value">
+                contact@zakarynichols.com
               </a>
             </div>
             <div className="contact-item">
