@@ -1,24 +1,24 @@
 export default function Experience() {
   const experiences = [
     {
-      company: 'MFB Technologies',
-      role: 'Software Developer',
-      period: 'Apr 2021 – Oct 2025',
+      company: 'MFB Technologies, Inc.',
+      app: 'Align Binders',
       website: 'align.lawyer',
-      achievements: [
-        'Architected multi-tenant legal platform handling 500+ page binders with enterprise-grade security and access controls',
-        'Built scalable binder export system supporting high-volume litigation workflows',
+      description: 'Real-time collaborative document platform enabling legal teams to annotate, navigate, and review case binders simultaneously.',
+      contributions: [
+        'Architected multi-tenant platform handling 500+ page binders with enterprise-grade security and access controls',
+        'Built scalable export system supporting high-volume litigation workflows',
         'Designed compliant UI components meeting enterprise security and accessibility standards',
         'Led Azure DevOps sprints and established CI/CD practices for team productivity',
       ],
-      technologies: ['React', 'TypeScript', 'Real-time Collaboration', 'PostgreSQL', 'Azure DevOps', 'Security', 'UI/UX'],
+      technologies: ['React', 'TypeScript', 'Real-time Collaboration', 'Node.js', 'Azure DevOps', 'Security', 'UI/UX'],
     },
     {
-      company: 'Spectrum Net Designs',
-      role: 'Full-Stack Developer',
-      period: 'Feb 2021 – Apr 2021',
+      company: 'Spectrum Net Designs, Inc.',
+      app: 'Auctioneer Software',
       website: 'auctioneersoftware.com',
-      achievements: [
+      description: 'Real-time auction platform handling high-volume bidding events with low latency and reliable data consistency.',
+      contributions: [
         'Delivered end-to-end features for high-volume auction and e-commerce platform',
         'Designed SQL schemas for transactional data under mission-critical production workflows',
         'Built low-latency APIs for bidder-facing interfaces during peak traffic events',
@@ -27,11 +27,11 @@ export default function Experience() {
       technologies: ['React', 'Node.js', 'SQL', 'Real-time Systems', 'Frontend UI', 'Database Design', 'Accessibility'],
     },
     {
-      company: 'Firefly Integrations',
-      role: 'Web/Mobile Developer',
-      period: 'Oct 2020 – Feb 2021',
+      company: 'Firefly Integrations, LLC',
+      app: 'Global Link',
       website: 'fireflyint.com',
-      achievements: [
+      description: 'Cross-platform mobile app connecting to embedded RV control systems via Bluetooth Low Energy for real-time monitoring.',
+      contributions: [
         'Developed cross-platform mobile app for enterprise RV hardware integration via Bluetooth Low Energy',
         'Built real-time control/monitoring for mission-critical RV systems (HVAC, power, sensors)',
         'Collaborated with firmware engineers on low-level communication protocols',
@@ -41,13 +41,27 @@ export default function Experience() {
     },
   ]
 
+  const featuredProject = {
+    name: 'FULL Barbell',
+    website: 'fullbarbell.com',
+    status: 'Closed Beta',
+    description: 'Full-stack fitness tracking application with Dockerized infrastructure, Stripe billing, and secure Auth0 authentication.',
+    achievements: [
+      'Designed and deployed full-stack web application with Dockerized infrastructure on Ubuntu 24',
+      'Implemented Stripe subscription billing with customer portal and proration handling',
+      'Built secure authentication with Auth0 supporting multi-factor authentication',
+      'Architected PostgreSQL database with optimized indexes for high-volume data queries',
+    ],
+    technologies: ['Docker', 'PostgreSQL', 'Stripe', 'Auth0', 'Ubuntu', 'CI/CD', 'React', 'TypeScript', 'Node.js'],
+  }
+
   return (
     <section id="experience" className="experience">
       <div className="experience-container">
         <div className="section-header">
           <h2 className="section-title">Experience</h2>
           <p className="section-subtitle">
-            A track record of delivering high-impact solutions across various industries and company stages
+            Production systems I've contributed to
           </p>
         </div>
         <div className="experience-timeline">
@@ -55,18 +69,17 @@ export default function Experience() {
             <div key={index} className="experience-card">
               <div className="experience-header">
                 <div className="experience-title-group">
-                  <h3 className="experience-company">{exp.company}</h3>
+                  <h3 className="experience-company">{exp.app}</h3>
+                  <span className="experience-company-sub">{exp.company}</span>
                 </div>
-                <div className="experience-meta">
-                  <span className="experience-period">{exp.period}</span>
-                </div>
+                <a href={`https://${exp.website}`} target="_blank" rel="noopener noreferrer" className="experience-website">
+                  {exp.website}
+                </a>
               </div>
-              <a href={`https://${exp.website}`} target="_blank" rel="noopener noreferrer" className="experience-website">
-                {exp.website}
-              </a>
+              <p className="experience-description">{exp.description}</p>
               <ul className="experience-achievements">
-                {exp.achievements.map((achievement, achievementIndex) => (
-                  <li key={achievementIndex}>{achievement}</li>
+                {exp.contributions.map((contribution, contributionIndex) => (
+                  <li key={contributionIndex}>{contribution}</li>
                 ))}
               </ul>
               <div className="experience-technologies">
@@ -84,31 +97,23 @@ export default function Experience() {
           <div className="experience-card">
             <div className="experience-header">
               <div className="experience-title-group">
-                <h3 className="experience-company">FULL Barbell</h3>
+                <h3 className="experience-company">{featuredProject.name}</h3>
+                <span className="experience-status">{featuredProject.status}</span>
               </div>
-              <div className="experience-meta">
-                <span className="experience-period">Closed Beta</span>
-              </div>
+              <a href={`https://${featuredProject.website}`} target="_blank" rel="noopener noreferrer" className="experience-website">
+                {featuredProject.website}
+              </a>
             </div>
-            <a href="https://fullbarbell.com" target="_blank" rel="noopener noreferrer" className="experience-website">
-              fullbarbell.com
-            </a>
+            <p className="experience-description">{featuredProject.description}</p>
             <ul className="experience-achievements">
-              <li>Designed and deployed full-stack web application with Dockerized infrastructure on Ubuntu 24</li>
-              <li>Implemented Stripe subscription billing with customer portal and proration handling</li>
-              <li>Built secure authentication with Auth0 supporting multi-factor authentication</li>
-              <li>Architected PostgreSQL database with optimized indexes for high-volume data queries</li>
+              {featuredProject.achievements.map((achievement, achievementIndex) => (
+                <li key={achievementIndex}>{achievement}</li>
+              ))}
             </ul>
             <div className="experience-technologies">
-              <span className="technology-tag">Docker</span>
-              <span className="technology-tag">PostgreSQL</span>
-              <span className="technology-tag">Stripe</span>
-              <span className="technology-tag">Auth0</span>
-              <span className="technology-tag">Ubuntu</span>
-              <span className="technology-tag">CI/CD</span>
-              <span className="technology-tag">React</span>
-              <span className="technology-tag">TypeScript</span>
-              <span className="technology-tag">Node.js</span>
+              {featuredProject.technologies.map((tech, techIndex) => (
+                <span key={techIndex} className="technology-tag">{tech}</span>
+              ))}
             </div>
           </div>
         </div>

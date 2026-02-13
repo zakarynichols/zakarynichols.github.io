@@ -520,6 +520,12 @@ section {
   color: var(--color-text);
 }
 
+.experience-company-sub {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  font-weight: 400;
+}
+
 .experience-role {
   font-size: 1rem;
   color: var(--color-primary);
@@ -550,6 +556,13 @@ section {
   color: var(--color-text-muted);
   margin-bottom: 20px;
   font-weight: 500;
+}
+
+.experience-description {
+  margin-bottom: 8px;
+  font-size: 0.9375rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
 }
 
 .experience-website:hover {
