@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="footer-content">
           <div className="footer-brand">
             <span className="footer-logo">Zakary Nichols</span>
-            <span className="footer-tagline">Full-Stack SaaS Engineer</span>
+            <span className="footer-tagline">Full-Stack Developer</span>
           </div>
           <nav className="footer-nav">
             <a href="#home">Home</a>

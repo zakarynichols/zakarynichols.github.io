@@ -1,7 +1,7 @@
 import { useForm, ValidationError } from '@formspree/react'
 
 const idealProjects = [
-  'Early-stage SaaS applications',
+  'Early-stage web applications',
   'Data-heavy web applications',
   'Backend architecture projects',
   'Frontend engineering projects',
@@ -10,10 +10,10 @@ const idealProjects = [
 ]
 
 const projectTypes = [
-  'Full-Stack SaaS Development',
+  'Full-Stack Web Development',
   'Backend Architecture',
   'Frontend Engineering',
-  'SaaS Hardening & Migration',
+  'Application Hardening & Migration',
   'Real-Time Systems',
   'Consulting & Architecture Review',
   'Other',

@@ -1,7 +1,7 @@
 export default function Services() {
   const services = [
     {
-      title: 'Full-Stack SaaS Development',
+      title: 'Full-Stack Web Development',
       description: 'Complete application development from requirements to deployment. I build secure, scalable web applications with proper architecture from day one.',
       features: [
         'Database schema design and optimization',
@@ -25,8 +25,8 @@ export default function Services() {
       ],
     },
     {
-      title: 'Subscription & Billing Integration',
-      description: 'Revenue-focused integrations built for recurring business models. I implement secure, scalable billing systems that grow with your customer base.',
+      title: 'Payment & Billing Integration',
+      description: 'Revenue-focused integrations built for recurring and transaction-based business models. I implement secure, scalable billing systems that grow with your customer base.',
       features: [
         'Stripe subscription implementation',
         'Usage-based pricing models',
@@ -37,8 +37,8 @@ export default function Services() {
       ],
     },
     {
-      title: 'SaaS Hardening & Migration',
-      description: 'Transform MVP codebases into production-ready systems. I help startups scale from prototype to stable, maintainable applications.',
+      title: 'Application Hardening & Migration',
+      description: 'Transform codebases into production-ready systems. I help startups and businesses scale from prototype to stable, maintainable applications.',
       features: [
         'Codebase audit and refactoring',
         'Database migration strategies',

@@ -27,15 +27,15 @@ export default function Hero() {
       <div className="hero-container">
         <div className="hero-content-wrapper">
           <div className="hero-content">
-            <p className="hero-subtitle">Full-Stack SaaS Engineer</p>
+            <p className="hero-subtitle">Full-Stack Developer</p>
             <h1 className="hero-title">
               I Build Production-Ready<br />
-              SaaS Applications
+              Web Applications
             </h1>
             <p className="hero-description">
               I help founders and businesses turn complex product requirements into fully deployed,
               production-ready web applications. From database architecture to frontend experience
-              to Dockerized deployment, I handle the entire lifecycle.
+              to Dockerized deployment on Ubuntu, I handle the entire development lifecycle.
             </p>
             <div className="hero-cta">
               <button className="btn btn-primary" onClick={() => scrollToSection('contact')}>

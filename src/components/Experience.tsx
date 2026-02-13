@@ -94,7 +94,7 @@ export default function Experience() {
               fullbarbell.com
             </a>
             <ul className="experience-achievements">
-              <li>Designed and deployed full-stack SaaS with Dockerized infrastructure on Ubuntu 24</li>
+              <li>Designed and deployed full-stack web application with Dockerized infrastructure on Ubuntu 24</li>
               <li>Implemented Stripe subscription billing with customer portal and proration handling</li>
               <li>Built secure authentication with Auth0 supporting multi-factor authentication</li>
               <li>Architected PostgreSQL database with optimized indexes for high-volume data queries</li>
