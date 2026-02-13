@@ -11,11 +11,9 @@ const idealProjects = [
 
 const projectTypes = [
   'Full-Stack Web Development',
-  'Backend Architecture',
-  'Frontend Engineering',
   'Application Hardening & Migration',
+  'Technical Consulting',
   'Real-Time Systems',
-  'Consulting & Architecture Review',
   'Other',
 ]
 
